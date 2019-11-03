@@ -107,7 +107,7 @@ class UploadsController extends Controller
      */
     public function destroy(ImageUpload $imageUpload) // ImageUpload $imageUpload
     {
-        // delete files (original and thumbnail) //
+        // delete files (original and thumbnail) // ...
         File::delete([
             public_path($imageUpload->original),
             public_path($imageUpload->thumbnail)
